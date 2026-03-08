@@ -3,3 +3,4 @@ matplotlib
 opencv-python
 cython
 setuptools
+jinja2

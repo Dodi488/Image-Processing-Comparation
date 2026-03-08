@@ -74,15 +74,15 @@ def main():
         axes[row, 0].axis('off')
 
         axes[row, 1].imshow(res_py, cmap='gray')
-        axes[row, 1].set_title(f'{filter_name} (Pure Python)\n{times[0][row]:.4f}')
+        axes[row, 1].set_title(f'{filter_name} (Pure Python)\n{times[0][row]:.4f} Seconds')
         axes[row, 1].axis('off')
 
         axes[row, 2].imshow(res_np, cmap='gray')
-        axes[row, 2].set_title(f'{filter_name} (NumPy)\n{times[1][row]:.4f}')
+        axes[row, 2].set_title(f'{filter_name} (NumPy)\n{times[1][row]:.4f} Seconds')
         axes[row, 2].axis('off')
 
         axes[row, 3].imshow(res_cy, cmap='gray')
-        axes[row, 3].set_title(f'{filter_name} (Cython)\n{times[2][row]:.4f}')
+        axes[row, 3].set_title(f'{filter_name} (Cython)\n{times[2][row]:.4f} Seconds')
         axes[row, 3].axis('off')
 
     plt.tight_layout(rect=[0, 0.03, 1, 0.95])
